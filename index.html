@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Etch-a-sketch</title>
+</head>
+<body>
+    <h1 class="center">Etch-a-sketch</h1>
+
+    <div id="content" class="center">
+
+            <div id="configuration">
+
+                <div id="colorPalete" class=center>
+                    <div id="colors">
+                        <div class="color" id="red"></div>
+                        <div class="color" id="orange"></div>
+                        <div class="color" id="yellow"></div>
+                        <div class="color" id="green"></div>
+                        <div class="color" id="lightblue"></div>
+                        <div class="color" id="blue"></div>
+                        <div class="color" id="pink"></div>
+                        <div class="color" id="purple"></div>
+                        <div class="color" id="black"></div>
+                        <div class="color" id="white"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="paintContainer"></div>
+
+            <div id="square" class="center">
+
+                Number of squares:
+
+                <div>
+                    
+                    <input type="range" name="points" min="1" max="100" id="boxSlider" value="16" onchange="showSliderVal(this.value)">
+                    <span id="showSliderVal">16</span>
+
+                </div>
+
+                <button onclick="makeDivs(1)" id="changeButton">Change</button>
+            
+            </div>
+            
+    </div>
+
+    <footer>
+            &copy;Krukuczek
+    </footer>
+</body>
+    <script src='script.js'></script>
+</html>
